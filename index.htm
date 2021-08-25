@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Player</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="player">
+    <video src="https://pixabay.com/videos/download/video-7260_source.mp4?attachment" class="video" playsinline></video>
+    <!-- Show Controls -->
+    <div class="show-controls">
+      <!-- Controls Container -->
+      <div class="controls-container">
+        <!-- Progress Bar -->
+        <div class="progress-range" title="Seek">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="control-group">
+          <!-- Left Controls -->
+          <div class="controls-left">
+            <!-- Play/Pause -->
+            <div class="play-controls">
+              <i class="fas fa-play" title="Play" id="play-btn"></i>
+            </div>
+          </div>
+          <!-- Right Controls -->
+          <div class="controls-right"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
